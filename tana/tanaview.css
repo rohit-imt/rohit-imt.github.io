@@ -1,22 +1,33 @@
 /* CSS script for Tana View published pages */
-/* Hide the "Try Tana for free" button */
+/* Hide the entire title bar with Tana logo and "Try Tana for free" button */
 
-/* Target the specific button by its aria-label and classes */
-button[aria-label="Menu"],
-button.navtarget {
+/* Target the main title bar container */
+.AppTitleBar-module_titlebar__IutCu {
     display: none !important;
 }
 
-/* Target by the specific CSS module classes */
-.Button-module_button__7zRTD.Button-module_solid__zXyMm.Button-module_regular__Fr-TR.Button-module_active__tkiu0 {
+/* Alternative: Target by the flex container class structure */
+.tw-flex.tw-gap-1.tw-justify-between {
     display: none !important;
 }
 
-/* Alternative: Target any button with these module classes */
-.Button-module_button__7zRTD,
-.Button-module_solid__zXyMm,
-.Button-module_regular__Fr-TR,
-.Button-module_active__tkiu0 {
+/* Target the menu action buttons container */
+.AppTitleBar-module_menuActionButtons__ZlI9u {
+    display: none !important;
+}
+
+/* Target the menu button specifically */
+.AppTitleBar-module_menuButton__eaRoF {
+    display: none !important;
+}
+
+/* Target buttons with the specific classes */
+.Button-module_topBar__MHkyA {
+    display: none !important;
+}
+
+/* Fallback: Hide any div containing both logo and "Try Tana" button */
+div:has(button[aria-label="Menu"]):has(button:contains("Try Tana")) {
     display: none !important;
 }
 
