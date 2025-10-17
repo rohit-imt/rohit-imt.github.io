@@ -1,44 +1,22 @@
 /* CSS script for Tana View published pages */
-/* Use this CSS in Tana View publish settings to remove footers and other UI elements */
+/* Hide the "Try Tana for free" button */
 
-/* Hide the entire header/navigation area */
-header,
-[role="banner"],
-.header,
-nav,
-[role="navigation"] {
+/* Target the specific button by its aria-label and classes */
+button[aria-label="Menu"],
+button.navtarget {
     display: none !important;
 }
 
-/* Hide any top bars or toolbars */
-.toolbar,
-.top-bar,
-.nav-bar,
-.app-bar {
+/* Target by the specific CSS module classes */
+.Button-module_button__7zRTD.Button-module_solid__zXyMm.Button-module_regular__Fr-TR.Button-module_active__tkiu0 {
     display: none !important;
 }
 
-/* Hide footer elements - try multiple variations */
-footer,
-[role="contentinfo"],
-.footer {
-    display: none !important;
-}
-
-/* Hide any Tana branding or logos */
-.logo,
-[class*="logo"],
-[class*="brand"],
-img[alt*="Tana"],
-img[alt*="tana"] {
-    display: none !important;
-}
-
-/* Hide share buttons and actions */
-button[class*="share"],
-[class*="share-button"],
-[aria-label*="share"],
-[aria-label*="Share"] {
+/* Alternative: Target any button with these module classes */
+.Button-module_button__7zRTD,
+.Button-module_solid__zXyMm,
+.Button-module_regular__Fr-TR,
+.Button-module_active__tkiu0 {
     display: none !important;
 }
 
