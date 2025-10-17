@@ -1,8 +1,87 @@
-body {
+/* CSS script for Tana View published pages */
+/* Use this CSS in Tana View publish settings to remove footers and other UI elements */
 
+body {
+    /* Clean body styling for published view */
 }
 
-.AppTitleBar-module_menuActionButtons__ZlI9u {
-    border: none !important;
+/* Hide top navigation/header */
+[data-testid="shared-view-header"],
+.shared-view-header,
+.navigation-header,
+.app-header {
     display: none !important;
+}
+
+/* Hide footer elements */
+[data-testid="shared-view-footer"],
+.shared-view-footer,
+.view-footer {
+    display: none !important;
+}
+
+/* Hide branding/logo elements */
+[data-testid="tana-logo"],
+.tana-logo,
+.app-logo,
+.branding {
+    display: none !important;
+}
+
+/* Hide navigation breadcrumbs */
+[data-testid="breadcrumb"],
+.breadcrumb,
+.navigation-breadcrumb {
+    display: none !important;
+}
+
+/* Hide share/action buttons */
+[data-testid="share-button"],
+[data-testid="view-actions"],
+.share-button,
+.view-actions,
+.action-buttons {
+    display: none !important;
+}
+
+/* Hide sidebar if present */
+[data-testid="sidebar"],
+.sidebar,
+.left-sidebar,
+.right-sidebar {
+    display: none !important;
+}
+
+/* Hide any "Published with Tana" watermarks */
+[data-testid="published-with-tana"],
+.published-with-tana,
+.watermark {
+    display: none !important;
+}
+
+/* Generic classes that might be used */
+.header,
+.footer,
+.nav,
+.navigation,
+.toolbar,
+.app-bar {
+    display: none !important;
+}
+
+/* Hide any top-level container UI elements */
+.app-chrome,
+.chrome,
+.ui-chrome,
+.layout-header,
+.layout-footer {
+    display: none !important;
+}
+
+/* Clean up margins and padding for main content */
+main,
+.main-content,
+[role="main"] {
+    margin: 0 !important;
+    padding: 0 !important;
 }
