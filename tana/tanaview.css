@@ -1,17 +1,29 @@
-/* Hide Tana Publish header logo */
-header img,
+/* Hide Tana logo and Try Tana button dynamically */
+:root {
+    --tana-header-display: none !important;
+}
+
+/* Catch post-render injected elements */
 a[href*="tana.inc"],
 a[href*="tana.pub"],
+a[href*="tana.app"],
 a[href*="Try Tana for free"],
-a:has(span:contains("Try Tana")),
-div[class*="Header_logo__"],
-div[class*="Header_tryTana__"] {
+header img[alt*="Tana"],
+header div[role="banner"],
+header a svg {
     display: none !important;
     visibility: hidden !important;
 }
 
-/* Optional: Adjust spacing after hiding elements */
-header, .header, .top-bar {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
+/* Extra fallback for dynamic button containers */
+div[class*="tryTana"],
+div[class*="ctaBanner"],
+.footer a[href*="tana.inc"] {
+    display: none !important;
+}
+
+/* Clean spacing fix */
+header, .header, .navbar {
+    margin: 0 !important;
+    padding: 0 !important;
 }
