@@ -1,14 +1,5 @@
-/* Hide the entire top title bar */
+/* Hide the entire top title bar including logo and banner */
 .AppTitleBar-module_titlebar__IutCu {
   display: none !important;
 }
 
-/* Alternatively, hide just the logo button */
-.AppTitleBar-module_menuButton__eaRoF {
-  display: none !important;
-}
-
-/* Hide the "Try Tana for free" button */
-.AppTitleBar-module_menuActionButtons__ZlI9u {
-  display: none !important;
-}
