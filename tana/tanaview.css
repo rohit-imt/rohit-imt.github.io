@@ -1,29 +1,14 @@
-/* Hide Tana logo and Try Tana button dynamically */
-:root {
-    --tana-header-display: none !important;
+/* Hide the entire top title bar */
+.AppTitleBar-module_titlebar__IutCu {
+  display: none !important;
 }
 
-/* Catch post-render injected elements */
-a[href*="tana.inc"],
-a[href*="tana.pub"],
-a[href*="tana.app"],
-a[href*="Try Tana for free"],
-header img[alt*="Tana"],
-header div[role="banner"],
-header a svg {
-    display: none !important;
-    visibility: hidden !important;
+/* Alternatively, hide just the logo button */
+.AppTitleBar-module_menuButton__eaRoF {
+  display: none !important;
 }
 
-/* Extra fallback for dynamic button containers */
-div[class*="tryTana"],
-div[class*="ctaBanner"],
-.footer a[href*="tana.inc"] {
-    display: none !important;
-}
-
-/* Clean spacing fix */
-header, .header, .navbar {
-    margin: 0 !important;
-    padding: 0 !important;
+/* Hide the "Try Tana for free" button */
+.AppTitleBar-module_menuActionButtons__ZlI9u {
+  display: none !important;
 }
