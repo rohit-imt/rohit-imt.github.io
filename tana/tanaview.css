@@ -1,96 +1,17 @@
-/* CSS script for Tana View published pages */
-/* Hide the entire title bar with Tana logo and "Try Tana for free" button */
-
-/* Target the main title bar container */
-.AppTitleBar-module_titlebar__IutCu {
+/* Hide Tana Publish header logo */
+header img,
+a[href*="tana.inc"],
+a[href*="tana.pub"],
+a[href*="Try Tana for free"],
+a:has(span:contains("Try Tana")),
+div[class*="Header_logo__"],
+div[class*="Header_tryTana__"] {
     display: none !important;
+    visibility: hidden !important;
 }
 
-/* Alternative: Target by the flex container class structure */
-.tw-flex.tw-gap-1.tw-justify-between {
-    display: none !important;
-}
-
-/* Target the menu action buttons container */
-.AppTitleBar-module_menuActionButtons__ZlI9u {
-    display: none !important;
-}
-
-/* Target the menu button specifically */
-.AppTitleBar-module_menuButton__eaRoF {
-    display: none !important;
-}
-
-/* Target buttons with the specific classes */
-.Button-module_topBar__MHkyA {
-    display: none !important;
-}
-
-/* Fallback: Hide any div containing both logo and "Try Tana" button */
-div:has(button[aria-label="Menu"]):has(button:contains("Try Tana")) {
-    display: none !important;
-}
-
-/* Hide breadcrumbs */
-.breadcrumb,
-[class*="breadcrumb"],
-ol[class*="breadcrumb"],
-nav[class*="breadcrumb"] {
-    display: none !important;
-}
-
-/* Hide any watermarks or "published with" text */
-[class*="watermark"],
-[class*="published"],
-small:contains("Tana"),
-small:contains("Published") {
-    display: none !important;
-}
-
-/* Hide any floating action buttons */
-.fab,
-[class*="floating"],
-button[style*="position: fixed"],
-button[style*="position: absolute"] {
-    display: none !important;
-}
-
-/* Hide sidebars and panels */
-aside,
-[role="complementary"],
-.sidebar,
-.side-panel,
-[class*="sidebar"],
-[class*="panel"] {
-    display: none !important;
-}
-
-/* Try to hide elements by common React/modern CSS patterns */
-[class*="Header"],
-[class*="Footer"], 
-[class*="Navigation"],
-[class*="Nav"],
-[class*="Toolbar"],
-[class*="AppBar"],
-[class*="TopBar"] {
-    display: none !important;
-}
-
-/* Clean up the main content area */
-main,
-[role="main"],
-.main,
-.content,
-.main-content {
-    margin: 0 !important;
-    padding: 20px !important;
-    width: 100% !important;
-    max-width: none !important;
-}
-
-/* Hide any overlay elements */
-.overlay,
-.modal-backdrop,
-[class*="overlay"] {
-    display: none !important;
+/* Optional: Adjust spacing after hiding elements */
+header, .header, .top-bar {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
 }
