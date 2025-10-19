@@ -1,9 +1,5 @@
-/* Hide any top bar container with flex layout and logo */
-div[class*="AppTitleBar-module_titlebar"] {
+/* Hide the top bar in Tana Publish */
+div[class^="AppTitleBar-module_titlebar"] {
   display: none !important;
 }
 
-/* Hide any button with aria-label="Menu" (logo button) */
-button[aria-label="Menu"] {
-  display: none !important;
-}
