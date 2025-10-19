@@ -1,5 +1,9 @@
-/* Hide the top bar in Tana Publish */
-div[class^="AppTitleBar-module_titlebar"] {
+/* Hide top bar using partial class match */
+div[class*="AppTitleBar"] {
   display: none !important;
 }
 
+/* Hide logo button by aria-label */
+button[aria-label="Menu"] {
+  display: none !important;
+}
